@@ -27,6 +27,41 @@ git remote add origin <repository-url>
 
 git push -u origin master
 
-### To Test:
+### To Setup a Test Environment:
+Make a new branch:
+git checkout -b my-new-branch
+
+In VS Code make a new project folder called .github
+Now inside .github folder make another folder called "workflows" 
+Now inside "workflows" make a new file called "testing.yml"
+
+Inside testing.yml should look like this:
+
+name: Unit Tests
+
+on: [pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    strategy: 
+      matrix:
+       node-version: [16.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install
+      run: npm ci
+    - name: tests
+      run: npm test
+
+
+
+
 
 git commit -am 'initial workflow for tests'
