@@ -1,0 +1,7 @@
+Jest ships with experimental support for ECMAScript Modules (ESM).
+
+The APIs Jest uses to implement ESM support are still considered experimental by Node (as of version 18.8.0).
+
+With the warnings out of the way, this is how you activate ESM ( Import ) support in your tests.
+
+node --experimental-vm-modules node_modules/jest/bin/jest.js
