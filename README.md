@@ -73,7 +73,7 @@ git push origin my-new-branch
 ### For re-testing and sumbmitting the "same branch" workflow items:
 git pull origin my-new-branch
 
-git commit -am 'initial workflow for tests'
+git commit -am 'updated test code - should now pass tests'
 
 git push origin my-new-branch
 
