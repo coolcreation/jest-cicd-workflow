@@ -37,6 +37,7 @@ Now inside "workflows" make a new file called "testing.yml"
 
 Inside testing.yml should look like this:
 
+
 ```yaml
 name: Unit Tests
 
@@ -48,7 +49,7 @@ jobs:
 
     strategy: 
       matrix:
-       node-version: [16.x]
+       node-version: [20.x, 18.x, 16.x]
 
     steps:
     - uses: actions/checkout@v2
@@ -66,3 +67,9 @@ jobs:
 ### Now commit the workflow items:
 git commit -am 'initial workflow for tests'
 git push origin my-new-branch
+
+
+### Now commit the workflow items:
+git commit -am 'initial workflow for tests'
+git push origin my-new-branch
+
