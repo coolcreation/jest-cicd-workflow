@@ -69,7 +69,9 @@ git commit -am 'initial workflow for tests'
 git push origin my-new-branch
 
 
-### Now commit the workflow items:
+### For re-testing and sumbmitting the "same branch" workflow items:
+git pull origin my-new-branch
 git commit -am 'initial workflow for tests'
 git push origin my-new-branch
+
 
