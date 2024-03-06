@@ -1,13 +1,8 @@
-// export default mathFunctions = {
-//     add: (x, y) =>  x + y,
-//     subtract: (x, y) =>  x - y,
-//     multiply: (x, y) =>  x * y,
-//     divide: (x, y) =>  x / y,
-// }
+const mathFunctions = {
+    add: (x, y) =>  x + y,
+    subtract: (x, y) =>  x - y,
+    multiply: (x, y) =>  x * y,
+    divide: (x, y) =>  x / y,
+}
 
-module.exports  = {
-        add: (x, y) =>  x + y,
-        subtract: (x, y) =>  x - y,
-        multiply: (x, y) =>  x * y,
-        divide: (x, y) =>  x / y,
-    }
+export default mathFunctions
