@@ -70,7 +70,7 @@ git commit -am 'initial workflow for tests'
 git push origin my-new-branch
 
 
-### For re-testing and sumbmitting the "same branch" workflow items:
+### For re-testing and submitting the "same branch" workflow items:
 git pull origin my-new-branch
 
 git commit -am 'updated test code - should now pass tests'
