@@ -37,6 +37,7 @@ Now inside "workflows" make a new file called "testing.yml"
 
 Inside testing.yml should look like this:
 
+```yaml
 name: Unit Tests
 
 on: [pull_request]
@@ -60,7 +61,7 @@ jobs:
     - name: tests
       run: npm test
 
-
+```
 
 ### Now commit the workflow items:
 git commit -am 'initial workflow for tests'
