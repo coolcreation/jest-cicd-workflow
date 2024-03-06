@@ -66,10 +66,15 @@ jobs:
 
 ### Now commit the workflow items:
 git commit -am 'initial workflow for tests'
+
 git push origin my-new-branch
 
 
-### Now commit the workflow items:
-git commit -am 'initial workflow for tests'
+### For re-testing and submitting the "same branch" workflow items:
+git pull origin my-new-branch
+
+git commit -am 'updated test code - should now pass tests'
+
 git push origin my-new-branch
+
 
