@@ -3,7 +3,7 @@ console.log(add(4,9));
 
 describe('Math.js tests', () => {
     it("Should test add ", () => {
-        expect(add(2,2)).toBe(4);
+        expect(add(2,2)).toBe(3);
     })
     it("Should test subtract ", () => {
         expect(subtract(16,3)).toBe(13);
